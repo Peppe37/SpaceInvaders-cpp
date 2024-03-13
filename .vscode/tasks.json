@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "./src/main.cpp",
+                "-o",
+                "main.exe",
+                "-ID:/SpaceInvaders-cpp/lib/SFML-mingw32/include",
+                "-LD:/SpaceInvaders-cpp/lib/SFML-mingw32/lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system",
+                "-lsfml-audio",
+                "-lopengl32",
+                "-lfreetype",
+                "-lwinmm",
+                "-lgdi32"
+            ],
+            "group": "build"
+        }
+    ]
+}
